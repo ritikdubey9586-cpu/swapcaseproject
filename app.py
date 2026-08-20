@@ -1,3 +1,4 @@
 import streamlit as st
-text = st.text_input("enter a string ")
-st.write("Swapcase: ",text.swapcase())
+st.markdown("<style>#MainMenu, footer {visibility: hidden;}</style>", unsafe_allow_html=True)
+text = st.text_input("Enter a string")
+st.write("Swapcase:", text.swapcase())
