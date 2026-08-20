@@ -1,4 +1,7 @@
 import streamlit as st
-st.markdown("<style>#MainMenu, footer {visibility: hidden;}</style>", unsafe_allow_html=True)
-text = st.text_input("Enter a string")
-st.write("Swapcase:", text.swapcase())
+
+st.title("🔄 Swapcase Tool")
+st.write("Convert uppercase letters to lowercase and lowercase letters to uppercase.")
+
+text = st.text_input("Enter your string")
+st.write("Result:", text.swapcase())
